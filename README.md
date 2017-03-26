@@ -58,7 +58,7 @@ it will return the following JSON text
 
 http://www.tetonsoftware.com/pets/pets.json
 it will return the following JSON text
-'''
+```json
 {
 "pets":[
 	{	
@@ -75,7 +75,7 @@ it will return the following JSON text
 	}
 	]
 }
-'''
+```
 
 Use the info in the name and file fields to populate the spinner.  Please use 1 list only to hold this data, something like List&lt;pet&gt; myList.  It will be part of the adapter associated with the spinner.  The pet object just holds the name and its associated file.
 
