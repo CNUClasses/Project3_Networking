@@ -33,20 +33,20 @@ This is just an exercise to familiarize you with network communications, AsyncTa
 
 - **Sites where JSON and images are stored**
 
-_&lt;?_ **xml version=****&quot;1.0&quot; **** encoding= ****&quot;utf-8&quot;** _?&gt;_
-&lt; **resources** &gt;
-    &lt; **string-array**  **name=****&quot;JSON\_URL\_NAME&quot;**&gt;
-        &lt; **item** &gt;CNU - Defender&lt;/ **item** &gt;
-        &lt; **item** &gt;Pair - Teton Software - Pets&lt;/ **item** &gt;
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="JSON_URL_NAME">
+        <item>CNU - Defender</item>
+        <item>Pair - Teton Software - Pets</item>
 
 
-    &lt;/ **string-array** &gt;
-    &lt; **string-array**  **name=****&quot;JSON\_URL&quot;**&gt;
-        &lt; **item** &gt;http://www.pcs.cnu.edu/~kperkins/pets/&lt;/ **item** &gt;
-        &lt; **item** &gt;http://www.tetonsoftware.com/pets/&lt;/ **item** &gt;
+    </string-array>
+    <string-array name="JSON_URL">
+        <item>http://www.pcs.cnu.edu/~kperkins/pets/</item>
+        <item>http://www.tetonsoftware.com/pets/</item>
 
-    &lt;/ **string-array** &gt;
-&lt;/ **resources** &gt;
+    </string-array>
+</resources>
 
 - **Getting the JSON info**
 
@@ -56,36 +56,23 @@ http://www.tetonsoftware.com/pets/pets.json
 
 it will return the following JSON text
 
+http://www.tetonsoftware.com/pets/pets.json
+it will return the following JSON text
 {
-
-&quot;pets&quot;:[
-
-        {
-
-        &quot;name&quot;:&quot;Winston&quot;,
-
-        &quot;file&quot;:&quot;p0.png&quot;
-
-        },
-
-        {
-
-        &quot;name&quot;:&quot;Higgens&quot;,
-
-        &quot;file&quot;:&quot;p1.png&quot;
-
-        },
-
-        {
-
-        &quot;name&quot;:&quot;Broccoli&quot;,
-
-        &quot;file&quot;:&quot;p2.png&quot;
-
-        }
-
-        ]
-
+"pets":[
+	{	
+	"name":"Winston",
+	"file":"p0.png"
+	},
+	{	
+	"name":"Higgens",
+	"file":"p1.png"
+	},
+	{	
+	"name":"Broccoli",
+	"file":"p2.png"
+	}
+	]
 }
 
 Use the info in the name and file fields to populate the spinner.  Please use 1 list only to hold this data, something like List&lt;pet&gt; myList.  It will be part of the adapter associated with the spinner.  The pet object just holds the name and its associated file.
