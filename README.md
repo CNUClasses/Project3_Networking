@@ -87,4 +87,4 @@ http://www.tetonsoftware.com/pets/p0.png
 
 **Preference listener** – Make sure your preference listener is a member of your main activity (See [http://stackoverflow.com/questions/2542938/sharedpreferences-onsharedpreferencechangelistener-not-being-called-consistently](http://stackoverflow.com/questions/2542938/sharedpreferences-onsharedpreferencechangelistener-not-being-called-consistently) for why).  This means you have something like the following example;
 
- ![Alt text](./ART/1.png?raw=true "Figure 1")
+ ![Alt text](./ART/img1.jpg?raw=true "Figure 1")
